@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },"scripts": {
+    "start": "concurrently \" cd server && npm i &&  npm run server\" \" cd client && npm i && npm run dev\"",
+    "installer": "concurrently \" cd server &&  npm i\" \" cd client && npm i\"",
+    "start-watch": "nodemon run-babel index.js",
+    "wp-server": "webpack-dev-server"
+  }
+}
